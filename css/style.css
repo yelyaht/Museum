@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@1,300&display=swap');
+
 /* Reset */
 * {
   box-sizing: border-box;
@@ -6,24 +9,30 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4 url('../images/bg.jpg') no-repeat center center fixed;
+  font-family: 'Merriweather', serif;
+  background-color: #66648b; /* Twilight Purple */
   background-size: cover;
-  color: #333;
+  color: #fffdd8; /* Light Cream */
   line-height: 1.6;
 }
 
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+
 /* Header and Footer */
 header, footer {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #0f52ba; /* Sapphire Blue */
   text-align: center;
   padding: 20px;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #56a8bd;
 }
 
 footer {
   margin-top: 40px;
-  border-top: 2px solid #ccc;
+  border-top: 2px solid #56a8bd;
   font-size: 0.9em;
 }
 
@@ -37,15 +46,16 @@ button {
   margin: 5px;
   padding: 10px 20px;
   font-weight: bold;
-  background-color: #333;
-  color: white;
+  background-color: #56a8bd; /* Accent Teal */
+  color: #fffdd8; /* Light Cream */
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #555;
+  background-color: #0f52ba; /* Highlight on hover */
 }
 
 /* Home Page Layout */
@@ -59,7 +69,17 @@ button:hover {
   flex: 1;
   margin: 10px;
   padding: 20px;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255, 253, 216, 0.1); /* Transparent cream for subtle styling */
   border: 1px solid #ccc;
   border-radius: 10px;
 }
+
+/* Links (if any are used) 
+a {
+  color: #fffdd8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #56a8bd;
+}*/
