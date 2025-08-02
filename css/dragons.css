@@ -227,6 +227,15 @@ h3{
   box-shadow: 0 0 20px rgba(15, 82, 186, 0.5);
 }
 
+.dragon-trio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
 .background-wrap {
   background-image: url('../images/dragonbackground.jpg');
   background-size: 120% 100%;
@@ -236,13 +245,24 @@ h3{
   min-height: 100vh;
 }
 
-.about-box{
+.about-box {
   background-color: rgba(86, 168, 189, 0.85);
   padding: 30px;
   border-radius: 12px;
   margin: 40px auto;
   max-width: 1000px;
   box-shadow: 0 0 12px rgba(15, 82, 186, 0.4);
+  flex: 1 1 600px;
+}
+
+.about-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1200px;
 }
 
 .home-columns {
