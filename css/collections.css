@@ -135,7 +135,9 @@ h1 {
   text-decoration: none;
   transition: transform 0.3s ease;
   display: flex;
-  flex-direction: center
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
   /* box-shadow: 0 0 12px rgba(15, 82, 186, 0.4); */
 }
 
@@ -144,10 +146,11 @@ h1 {
   background-color: rgba(86, 168, 189, 1);
 }
 
+/* Title */
 .creature-card h3 {
   font-family: 'Cinzel', serif;
   font-size: 1.4em;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #fffdd8;
   text-align: center;
 }
@@ -179,11 +182,12 @@ h1 {
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
 }
 
+/* 2-column layout inside the card */
 .card-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gaps: 20px;
-  width: 100%;
+  gap: 20px;
+  /*width: 100%;*/
 }
 
 .card-text p {
