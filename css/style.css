@@ -31,19 +31,22 @@ header {
   top: 0;
   background-color: #0f52ba;
   color: #fffdd8;
-  padding: 10px 20px 25px;
+  padding: 20px;
   z-index: 1000;
-  text-align: center;
   border-bottom: 2px solid #56a8bd;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 2em;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  height: 120px;
 }
 
 header h1 {
-  font-family: 'Cinzel', serif;
-  font-size: 2em;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 /* attempt to get nav container below title */
