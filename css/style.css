@@ -21,8 +21,6 @@ body {
   background-color: #66648b;
   color: #fffdd8;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
 }
 
 /* Header */
@@ -90,7 +88,7 @@ button:hover {
   border-radius: 12px;
   text-align: center;
   max-width: 900px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
 }
 
 .hero h2 {
@@ -110,6 +108,8 @@ button:hover {
   gap: 40px;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .column-box {
@@ -137,6 +137,13 @@ button:hover {
   font-style: italic;
 }
 
+.home-columns {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .background-wrap {
   background-image: url('../images/banner.jpg'); /* Replace with your real image */
   background-size: cover;
@@ -144,6 +151,8 @@ button:hover {
   background-repeat: no-repeat;
   padding: 60px 20px; /* Add spacing around content */
   flex: 1;
+/*  flex-direction: column;
+  align-items: center; */
 }
 
 .page-wrapper {
