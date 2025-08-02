@@ -202,3 +202,10 @@ footer {
   box-shadow: 0 -2px 8px #0f52ba;
   width: 100%;
 }
+
+.footer-note {
+  margin: 20px 20px 0;
+  font-style: italic;
+  font-size: 1.1em;
+  color: #fffdd8;
+}
