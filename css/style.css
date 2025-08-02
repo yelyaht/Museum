@@ -137,6 +137,14 @@ button:hover {
   font-style: italic;
 }
 
+.background-wrap {
+  background-image: url('../images/banner.jpg'); /* Replace with your real image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px; /* Add spacing around content */
+}
+
 .full-width-banner {
   width: 100%;
   height: auto;
@@ -144,6 +152,8 @@ button:hover {
   margin-top: 40px;
   border-top: 4px solid #0f52ba;
   border-bottom: 4px solid #0f52ba;
+  filter: brightness(0.9) contrast(1.1);
+  box-shadow: 0 0 20px rgba(15, 82, 186, 0.5);
 }
 
 /* Footer */
