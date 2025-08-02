@@ -2,34 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Collections - My Museum</title>
+  <title>Collections - Mythical Creature Museum</title>
   <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/collections.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Our Collections</h1>
-  </header>
+  <div class="page-wrapper">
+    <header>
+      <h1>Our Collections</h1>
+      <div class="nav-buttons">
+        <button onclick="location.href='../index.html'">Home</button>
+        <button onclick="location.href='staff.html'">Staff</button>
+      </div>
+    </header>
 
-  <nav class="top-nav">
-    <button onclick="location.href='../index.html'">Home</button>
-    <button onclick="location.href='staff.html'">Staff</button>
-    <button onclick="location.href='collections.html'">Collections</button>
-  </nav>
+    <div class="background-wrap">
+      <main class="home-columns">
+    <section class="hero">
+      <h2>Welcome to the Hall of Legends</h2>
+      <p>Where fact and folklore entwine. Step beyond the veil of the ordinary and explore our
+        curated collection of mythical beings, each brought to life through ancient tales,
+        forgotten texts, and whispered legends.</p>
+    </section>
 
-  <nav class="sub-nav">
-    <button>Archeology</button>
-    <button>Anthropology</button>
-    <button>History</button>
-  </nav>
+    <div class="creature-grid">
+      <h3><a href=dragons.html" class="creature-card">Dragon's Keep</a></h3>
+        <p>Enter the lair of the legendary fire-breathers. From Eastern guardian spirits to Western
+          tyrants of the skies, discover the cultural origins, elemental powers, and hoarded secrets
+          of dragons throughout history.</p>
+        <img src="images/attackdragon.jpg" alt="Dragon image">
+    </div>
+
+    <div class="creature-grid">
+      <h3><a href=sirens.html" class="creature-card">Siren's Cove</a></h3>
+        <p>Their voices lured sailors to their doom — or did they? Dive into the mystery of sirens,
+          mermaids, and sea nymphs whose songs echo through mythologies worldwide.</p>
+       <img src="images/siren3.jpg" alt="Siren image">
+    </div>
+
+    <div class="creature-grid">
+      <h3><a href=vampire.html" class="creature-card">Vampire Vault</a></h3>
+        <p>From the pale aristocrats of Eastern Europe to the shadowy spirits of Asia and Africa,
+          explore how every culture has its own version of the nightwalker. Blood, immortality,
+          and fear — the vampire story is never quite the same twice.</p>
+       <img src="images/femalevampire.jpg" alt="Vampire image">
+    </div>
+
+    <div class="creature-grid">
+      <h3><a href=werewolf.html" class="creature-card">Lycanthrope's Lair</a></h3>
+        <p>Bound by the moon, cursed by a bite — or born to it? Discover the many faces of the
+          werewolf: warrior, monster, guardian, or victim.</p>
+       <img src="images/werewolf3.jpg" alt="Werewolf image">  
+    </div>
+  </main>
+ </div>
 
   <main>
-    <p>Collections content coming soon...</p>
+      <p>More collections content coming soon...</p>
   </main>
 
   <footer>
     <p>This is a fictitious website created purely for academic purposes.</p>
+    <p>This project may include content generated with AI assistance.</p>
   </footer>
+  </div>
 </body>
 </html>
