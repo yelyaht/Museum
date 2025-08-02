@@ -224,7 +224,7 @@ footer {
   align-self: center;
 }
 
-.footer-note {
+/*.footer-note {
   margin: 40px 0 20px;
   font-style: italic;
   font-size: 1.1em;
@@ -232,4 +232,14 @@ footer {
   text-align: center;
   max-width: 1000px;
   width: 100%;
+} */
+
+.footer-note {
+  margin: 0 auto 10px auto; /* top margin 0 to bring it closer to footer */
+  font-style: italic;
+  font-size: 1.1em;
+  color: #fffdd8;
+  text-align: center;
+  max-width: 1000px;
+  padding-top: 30px; /* nudges it downward just slightly */
 }
