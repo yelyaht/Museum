@@ -9,9 +9,11 @@
 }
 
 html, body {
-  height: 100%; /* added */
-  display: flex; /* added */
-  flex-direction: column; /* added */
+  height: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -84,6 +86,11 @@ button:hover {
   flex: 1;
 }
 
+.main-content,
+.background-wrap {
+  flex: 1;
+}
+
 .hero {
   background-color: #56a8bd;
   padding: 30px;
@@ -143,6 +150,13 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   padding: 60px 20px; /* Add spacing around content */
+  flex: 1;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .full-width-banner {
@@ -165,4 +179,5 @@ footer {
   border-top: 2px solid #0f52ba;
   font-size: 0.9em;
   box-shadow: 0 -2px 8px #0f52ba;
+  width: 100%;
 }
