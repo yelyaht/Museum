@@ -1,0 +1,88 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@1,300&display=swap');
+
+/* General reset */
+body {
+  margin: 0;
+  font-family: 'Papyrus', cursive;
+}
+
+/* Header */
+.dragon-header {
+  background-color: #5c4b80;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 2em;
+}
+
+/* Sub-title Banner */
+.banner-title {
+  background-image: url('../images/dragonbackground.jpg'); /* Replace with actual path */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.banner-title h2 {
+  background-color: #3ab4a6;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.8em;
+  font-family: 'Chalkduster', cursive;
+}
+
+/* Main layout */
+.dragon-main {
+  background-image: url('../images/dragon-scales.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Image row */
+.dragon-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dragon-img {
+  border: 5px solid #0044cc;
+  width: 250px;
+  height: auto;
+}
+
+/* About Box */
+.about-box {
+  background-color: #28bbd3;
+  width: 90%;
+  max-width: 700px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-15deg);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.about-box h3 {
+  color: white;
+  font-size: 2.5em;
+  font-family: 'Bradley Hand', cursive;
+}
+
+/* Footer */
+.dragon-footer {
+  background-color: #5c4b80;
+  text-align: center;
+  color: white;
+  font-size: 0.9em;
+  padding: 8px;
+}
