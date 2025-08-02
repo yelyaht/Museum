@@ -83,7 +83,8 @@ button:hover {
 }
 
 .hero {
-  background-color: #56a8bd;
+  /*  background-color: #56a8bd; */
+  background-color: rgba(86, 168, 189, 0.85);
   padding: 30px;
   border-radius: 12px;
   text-align: center;
@@ -113,7 +114,8 @@ button:hover {
 }
 
 .column-box {
-  background-color: #56a8bd;
+  background-color: rgba(86, 168, 189, 0.85); /* 85% opaque */
+  /* background-color: #56a8bd; */
   padding: 20px;
   border-radius: 12px;
   width: 300px;
