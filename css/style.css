@@ -43,7 +43,7 @@ header {
   position: sticky;
   top: 0;
   height: 120px;
-  box-shadow: 0 4px 0px #0f52ba;
+  box-shadow: 0 2px 8px #0f52ba;
 }
 
 header h1 {
@@ -140,5 +140,4 @@ footer {
   margin-top: auto;
   border-top: 2px solid #0f52ba;
   font-size: 0.9em;
-  box-shadow: 0 -4px 0 #0f52ba;
 }
