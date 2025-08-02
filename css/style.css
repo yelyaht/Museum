@@ -49,8 +49,10 @@ header h1 {
 /* attempt to get nav container below title */
 .nav-buttons {
   position: absolute;
-  top: 20px;
+  bottom: 10px;
   left: 20px;
+  display: flex;
+  gap: 10px;
 }
 
 button {
