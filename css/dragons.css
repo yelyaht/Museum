@@ -4,7 +4,7 @@
 /* General reset */
 body {
   margin: 0;
-  font-family: 'Papyrus', cursive;
+  font-family: 'Merriweather', serif;
 }
 
 /* Header */
@@ -31,7 +31,7 @@ body {
   display: inline-block;
   padding: 10px 20px;
   font-size: 1.8em;
-  font-family: 'Chalkduster', cursive;
+  font-family: 'Merriweather', serif;
 }
 
 /* Main layout */
@@ -75,7 +75,7 @@ body {
 .about-box h3 {
   color: white;
   font-size: 2.5em;
-  font-family: 'Bradley Hand', cursive;
+  font-family: 'Merriweather', serif;
 }
 
 /* Footer */
