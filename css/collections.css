@@ -127,14 +127,14 @@ h1 {
 .creature-card {
   background-color: rgba(86, 168, 189, 0.85);
   color: #fffdd8;
-  border: 2px solid #0f52ba;
+  /*border: 2px solid #0f52ba;*/
   border-radius: 12px;
   padding: 20px;
   text-align: center;
   font-family: 'Cinzel', serif;
   text-decoration: none;
   transition: transform 0.3s ease;
-  box-shadow: 0 0 12px rgba(15, 82, 186, 0.4);
+  /* box-shadow: 0 0 12px rgba(15, 82, 186, 0.4); */
 }
 
 .creature-card:hover {
