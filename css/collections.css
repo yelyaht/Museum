@@ -182,7 +182,7 @@ h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 60px 0;
+  padding: 60px 0 20px;
   min-height: 100vh;
 }
 
@@ -208,4 +208,5 @@ footer {
   font-style: italic;
   font-size: 1.1em;
   color: #fffdd8;
+  text-align: left;
 }
