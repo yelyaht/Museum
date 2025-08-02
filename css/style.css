@@ -33,7 +33,7 @@ header {
   color: #fffdd8;
   padding: 20px;
   z-index: 1000;
-  border-bottom: 2px solid #56a8bd;
+  border-bottom: 2px solid #0f52ba;
   text-align: center;
   font-family: 'Cinzel', serif;
   font-size: 2em;
@@ -138,7 +138,6 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: auto;
-  border-top: 2px solid #56a8bd;
+  border-top: 2px solid #0f52ba;
   font-size: 0.9em;
-  box-shadow: 0 -2px 8px #0f52ba;
 }
