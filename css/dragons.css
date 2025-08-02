@@ -227,6 +227,14 @@ h3{
   box-shadow: 0 0 20px rgba(15, 82, 186, 0.5);
 }
 
+.dragon-float-img {
+  float: left;
+  max-width: 300px;
+  margin: 10px 20 px 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
 .dragon-trio {
   display: flex;
   justify-content: center;
@@ -263,6 +271,7 @@ h3{
   gap: 30px;
   margin: 40px auto;
   max-width: 1200px;
+  padding: 0 20px;
 }
 
 .home-columns {
