@@ -137,6 +137,15 @@ button:hover {
   font-style: italic;
 }
 
+.full-width-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 40px;
+  border-top: 4px solid #0f52ba;
+  border-bottom: 4px solid #0f52ba;
+}
+
 /* Footer */
 footer {
   background-color: #66648b;
