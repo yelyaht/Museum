@@ -8,6 +8,12 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%; /* added */
+  display: flex; /* added */
+  flex-direction: column; /* added */
+}
+
 body {
   font-family: 'Merriweather', serif;
   font-weight: 300;
@@ -15,6 +21,8 @@ body {
   background-color: #66648b;
   color: #fffdd8;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header */
@@ -23,17 +31,22 @@ header {
   top: 0;
   background-color: #0f52ba;
   color: #fffdd8;
-  padding: 20px;
+  padding: 10px 20px 25px;
   z-index: 1000;
   text-align: center;
   border-bottom: 2px solid #56a8bd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header h1 {
   font-family: 'Cinzel', serif;
   font-size: 2em;
+  margin-bottom: 10px;
 }
 
+/* attempt to get nav container below title */
 .nav-buttons {
   position: absolute;
   top: 20px;
@@ -62,6 +75,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
 }
 
 .hero {
@@ -117,7 +131,7 @@ footer {
   background-color: #0f52ba;
   text-align: center;
   padding: 20px;
-  margin-top: 60px;
+  margin-top: auto;
   border-top: 2px solid #56a8bd;
   font-size: 0.9em;
 }
