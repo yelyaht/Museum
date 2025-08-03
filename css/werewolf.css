@@ -230,7 +230,7 @@ h3{
   border-radius: 8px;
 }
 
-.vampire-img{
+.werewolf-img{
   width: 100%;
   max-width: 400px;
   height: auto;
@@ -240,7 +240,7 @@ h3{
   border: 3px solid #0f52ba;
 }
 
-.vampire-side-column {
+.werewolf-side-column {
   display: flex;
   width: 300px;
   flex-direction: column;
