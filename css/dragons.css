@@ -80,6 +80,11 @@ button:hover {
 
 body {
   font-family: 'Merriweather', serif;
+  background-image: url('../images/dragonbackground.jpg'); /* test */
+  background-size: cover; /* test */
+  background-attachment: fixed; /* test */
+  background-position: center top; /* test */
+  background-repeat: no-repeat; /* test */
   background-color: #66648b;
   color: #fffdd8;
   line-height: 1.6;
@@ -245,15 +250,15 @@ h3{
   flex-shrink: 0;
 }
 
-.background-wrap {
+/*.background-wrap {
   background-image: url('../images/dragonbackground.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
   /* padding: 0 0 20px;*/
-  min-height: 100vh;
-}
+/*  min-height: 100%;
+}*/
 
 .about-box {
   background-color: rgba(86, 168, 189, 0.85);
