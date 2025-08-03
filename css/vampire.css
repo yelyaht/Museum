@@ -10,12 +10,14 @@
 
 html, body {
   height: 100%;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
-header {
+.vampires-header .header-container {
   position: sticky;
   top: 0;
   background-color: #66648b;
@@ -35,7 +37,9 @@ header {
 }
 
 header h1 {
-  margin: 0;
+  margin-left: 10px;
+  font-size: 2rem;
+  text-align: left;
 }
 
 .nav-buttons {
@@ -80,11 +84,11 @@ button:hover {
 
 body {
   font-family: 'Merriweather', serif;
-  background-image: url('../images/vampirebackground.jpg'); /* test */
-  background-size: cover; /* test */
-  background-attachment: fixed; /* test */
-  background-position: center top; /* test */
-  background-repeat: no-repeat; /* test */
+  background-image: url('/Museum/images/vampirebackground.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top; ]
+  background-repeat: no-repeat;
   background-color: #66648b;
   color: #fffdd8;
   line-height: 1.6;
@@ -99,6 +103,8 @@ body {
 
 .page-wrapper {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -146,16 +152,16 @@ h3{
   font-size: 1.3em;
 }
 
-.creature-grid {
+.vampire-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
-.creature-card {
+.vampire-card {
   background-color: rgba(86, 168, 189, 0.85);
   color: #FFFDD4;
   border-radius: 12px;
@@ -168,6 +174,7 @@ h3{
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
+  box-shadow: 0 0 10px rgba(15, 82, 186, 0.4);
 }
 
 .creature-card:hover {
@@ -251,14 +258,14 @@ h3{
 }
 
 /*.background-wrap {
-  background-image: url('../images/vampirebackground.jpg');
+  background-image: url('https://yelyaht.github.io/Museum/images/vampirebackground.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;*/
-  /* padding: 0 0 20px;*/
-/*  min-height: 100%;
-}*/
+  background-attachment: fixed;
+  padding: 0 0 20px;
+  min-height: 100%;*/
+}
 
 .about-box {
   background-color: rgba(86, 168, 189, 0.85);
