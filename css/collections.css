@@ -119,6 +119,13 @@ h1 {
   margin: 0 auto;
 }
 
+.disabled-link {
+  pointer-events: none;
+  color: #fffdd8; 
+  text-decoration: none;
+  cursor: default;
+}
+
 .creature-card {
   background-color: rgba(86, 168, 189, 0.85);
   color: #fffdd8;
