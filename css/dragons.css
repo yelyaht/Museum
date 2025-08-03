@@ -250,7 +250,8 @@ h3{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 0 0 20px;
+  background-attachment: fixed;
+  /* padding: 0 0 20px;*/
   min-height: 100vh;
 }
 
@@ -270,7 +271,7 @@ h3{
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
-  /* margin: 40px auto; */
+  margin: 40px auto;
   max-width: 1200px;
   padding: 0 20px;
 }
