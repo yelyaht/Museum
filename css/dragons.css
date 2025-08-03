@@ -225,15 +225,7 @@ h3{
   border-radius: 8px;
   margin: 20px;
   box-shadow: 0 0 20px rgba(15, 82, 186, 0.5);
-}
-
-.dragon-float-img {
-  float: left;
-  max-width: 300px;
-  margin: 0 20px 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
-  height: auto;
+  border: 3px solid #0f52ba;
 }
 
 .dragon-side-column {
