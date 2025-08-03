@@ -248,6 +248,7 @@ h3{
   height: auto;
   border-radius: 8px;
   flex-shrink: 0;
+  padding-top: 20px;
 }
 
 /*.background-wrap {
