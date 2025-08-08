@@ -17,6 +17,31 @@ header h1 {
   font-size: 3rem;
 }
 
+.sub-nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgba(102, 100, 139, 0.9); /* matches header tone */
+  padding: 10px 0;
+  border-bottom: 2px solid #0f52ba;
+  box-shadow: 0 2px 8px rgba(15, 82, 186, 0.4);
+}
+
+.sub-nav-buttons button {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #56a8bd;
+  color: #fffdd8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.sub-nav-buttons button:hover {
+  background-color: #4695a8;
+}
 .staff-container {
   padding: 30px;
   display: flex;
