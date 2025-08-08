@@ -19,13 +19,12 @@ header h1 {
 
 .sub-nav-buttons {
   display: flex;
-  justify-content: center; /* centers horizontally */
-  align-items: center;     /* centers vertically if taller */
+  justify-content: center; /* center horizontally */
+  align-items: center;
   gap: 10px;
-  background-color: rgba(102, 100, 139, 0.9); /* matches header tone */
-  padding: 10px 0;
-  border-bottom: 2px solid #0f52ba;
-  box-shadow: 0 2px 8px rgba(15, 82, 186, 0.4);
+  padding: 15px 0; /* space around buttons */
+  border-bottom: none; /* no extra line */
+  box-shadow: none; /* no shadow so it blends into body */
 }
 
 .sub-nav-buttons button {
