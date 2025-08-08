@@ -19,7 +19,8 @@ header h1 {
 
 .sub-nav-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically if taller */
   gap: 10px;
   background-color: rgba(102, 100, 139, 0.9); /* matches header tone */
   padding: 10px 0;
@@ -28,7 +29,6 @@ header h1 {
 }
 
 .sub-nav-buttons button {
-  margin: 5px;
   padding: 8px 16px;
   background-color: #56a8bd;
   color: #fffdd8;
@@ -42,6 +42,7 @@ header h1 {
 .sub-nav-buttons button:hover {
   background-color: #4695a8;
 }
+
 .staff-container {
   padding: 30px;
   display: flex;
