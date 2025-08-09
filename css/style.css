@@ -55,6 +55,7 @@ header h1 {
   left: 20px;
   display: flex;
   gap: 10px;
+  clear: both;
 }
 
 button {
