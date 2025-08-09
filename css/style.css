@@ -46,6 +46,7 @@ header {
 
 header h1 {
   margin: 0;
+  clear: both;
 }
 
 /* attempt to get nav container below title */
