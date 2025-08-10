@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: 'Merriweather', serif;
-  background: url('images2/banner.jpg') no-repeat center center fixed;
+  background: url('images/staff/banner.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fffdd8;
   text-align: center;
@@ -14,7 +14,7 @@ header h1 {
   background-color: rgba(80, 70, 120, 0.9);
   padding: 20px;
   margin: 0;
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 .staff-container {
@@ -39,7 +39,7 @@ header h1 {
 .about-box {
   background-color: rgba(90, 170, 220, 0.8);
   padding: 60px 40px;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: bold;
   border-radius: 10px;
   flex: 1;
