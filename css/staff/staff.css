@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: 'Merriweather', serif;
-  background: url('images/staff/banner.jpg') no-repeat center center fixed;
+  background: url('../images/staff/banner.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fffdd8;
   text-align: center;
