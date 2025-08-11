@@ -19,7 +19,7 @@ body {
   font-weight: 300;
   font-style: italic;
   background-color: #66648b;
-  color: #FFFDD4; /* #fffdd8; */
+  color: #fffdd8;
   line-height: 1.6;
 }
 
@@ -32,37 +32,36 @@ header {
   padding: 20px;
   z-index: 1000;
   border-bottom: 2px solid #0f52ba;
-  text-align: center;
   font-family: 'Cinzel', serif;
   font-size: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
-  top: 0;
-  height: 120px;
   box-shadow: 0 2px 8px #0f52ba;
+  gap: 1px;
+  flex-direction: column;
 }
 
 header h1 {
   margin: 0;
+  line-height: 1.05; /*added*/
+  font-size: clamp(1.75rem, 4.5vw, 3rem); /*added; keeps from getting huge per AI*/
 }
 
 /* attempt to get nav container below title */
 .nav-buttons {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
   display: flex;
-  gap: 10px;
-  clear: both;
+  gap: 12px;
+  flex-wrap: wrap; /*added*/
+  align-self: flex-start;
+  margin-left: 20px;
 }
 
 button {
-  margin: 5px;
+  margin: 0.02; /*need to check on this*/
   padding: 8px 16px;
   background-color: #56a8bd;
-  color: #FFFDD4; /* #fffdd8; */
+  color: #FFFDD4;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -72,6 +71,28 @@ button {
 
 button:hover {
   background-color: #56a8bd;
+}
+
+.promo {
+  margin: 0.25rem;
+}
+
+.promo .feature-link {
+  display: block;
+  line-height: 1.35;
+  font-size: clamp(.95rem, 1.1vw + .4rem, 1.05rem);
+  text-wrap: balance;
+  hyphens: auto;
+  overflow-wrap: anywhere;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.promo .feature-link:hover,
+.promo. feature-link:focus {
+  text-decoration: underline;   /* show it’s clickable */
+  outline: none;
 }
 
 /* Main content */
@@ -84,7 +105,7 @@ button:hover {
 }
 
 .hero {
-  /*  background-color: #56a8bd; */
+/*  background-color: #56a8bd; */
   background-color: rgba(86, 168, 189, 0.85);
   padding: 30px;
   border-radius: 12px;
@@ -97,7 +118,7 @@ button:hover {
   font-family: 'Cinzel', serif;
   font-size: 2em;
   margin-bottom: 10px;
-  color: ##FFFDD4; /* #fffdd8; */
+  color: #fffdd8;
 }
 
 .hero p {
@@ -133,11 +154,19 @@ button:hover {
   font-family: 'Cinzel', serif;
   font-size: 1.4em;
   margin-bottom: 10px;
-  color: ##FFFDD4; /* #fffdd8; */
+  color: #fffdd8;
 }
 
 .column-box p {
   font-style: italic;
+}
+
+.column-box .promo {
+  margin-block: 0.25rem;
+}
+
+.column-box .promo .feature-link {
+  line-height: 1.35;
 }
 
 .home-columns {
