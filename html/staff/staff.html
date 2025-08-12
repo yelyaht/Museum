@@ -5,37 +5,31 @@
   <title>Mythical Creature Museum</title>
   <meta name="robots" content="noindex, nofollow">
   <meta name="author" content="Hayley Tymony">
-  <link rel="stylesheet" type="text/css" href="../css/staff/staff.css">
+  <link rel="stylesheet" href="../../css/global-modal.css">
+  <link rel="stylesheet" href="../../css/staff/staff.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
-  <style>
-    /* You can move this to staff.css */
-    .visually-hidden {
-      position: absolute !important;
-      width: 1px; height: 1px;
-      padding: 0; margin: -1px;
-      overflow: hidden; clip: rect(0 0 0 0);
-      white-space: nowrap; border: 0;
-    }
-  </style>
 </head>
 <body>
   <div class="page-wrapper">
     <header>
       <h1>Our Staff</h1>
       <div class="nav-buttons">
-        <button onclick="location.href='../index.html'">Home</button>
-        <button onclick="location.href='https://yelyaht.github.io/Museum/html/collections.html'">Collections</button>
-        <button onclick="location.href='https://yelyaht.github.io/SouvenirShop/'">Souvenir Shop</button>
+        <button onclick="location.href='../../index.html'">Home</button>
+        <button onclick="location.href='../collections/collections.html'">Collections</button>
+        <button onclick="location.href='../souvenir/shop.html'">Souvenir Shop</button>
       </div>
     </header>
 
     <div class="background-wrap">
-      <button onclick="location.href='https://yelyaht.github.io/Museum/html/collections.html'">← Back to Collections</button>
+      <div class="back-button-wrap">
+        <button onclick="history.back()">← Back</button>
+    </div>
+
+    <div class="background-wrap">
       <section class="staff">
         <h2>Meet Our Staff!</h2>
       </section>
 
-      <!-- Add a heading for this section to satisfy the validator -->
       <section class="staff-container">
         <h2 class="visually-hidden">Staff Profiles</h2>
 
@@ -55,7 +49,7 @@
               believes myths reveal what cultures needed to survive, not what they
               imagined.</p>
           </div>
-          <img src="../images/staff/eliravoss.jpg" alt="Dr. Elira Voss">
+          <img src="../../images/staff/eliravoss.jpg" alt="Dr. Elira Voss">
         </div>
 
         <!-- Staff member 2 -->
@@ -72,7 +66,7 @@
               tradition, his research reflects his Métis-Celtic heritage and a belief
               that myth reveals how cultures learn to endure.</p>
           </div>
-          <img src="../images/staff/thornecalder.jpg" alt="Dr. Thorne Calder">
+          <img src="../../images/staff/thornecalder.jpg" alt="Dr. Thorne Calder">
         </div>
 
         <!-- Staff member 3 -->
@@ -88,10 +82,21 @@
               reconstructions and advocates for repatriation and plural
               interpretation.</p>
           </div>
-          <img src="../images/staff/rhettalaric.jpg" alt="Rhett Alaric">
+          <img src="../../images/staff/rhettalaric.jpg" alt="Rhett Alaric">
         </div>
       </section>
-    </div> <!-- close .background-wrap BEFORE footer -->
+    </div>
+
+    <!-- Modal -->
+      <div id="imageModal" class="modal" tabindex="-1" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-inner" role="document">
+        <button class="modal-close" tabindex="-1" aria-label="Close image (Esc)">&times;</button>
+        <img id="modalImg" alt="">
+        <p id="modalCaption" class="modal-caption" aria-hidden="true"></p>
+      </div>
+    </div>
+
+    <script src="../../js/staff/staff.js"></script>
 
     <footer>
       <p>This is a fictitious website created purely for academic purposes. The
