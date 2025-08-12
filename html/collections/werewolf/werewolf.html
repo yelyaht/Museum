@@ -5,32 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Hayley Tymony">
   <title>Lycansthropes' Lair</title>
-  <link rel="stylesheet" href="../css/werewolf.css">
+  <!--<link rel="stylesheet" href="../../css/global-modal.css">-->
+  <link rel="stylesheet" href="../../../css/collections/werewolf/werewolf.css">
 </head>
 <body>
-  <!-- <div class="background-wrap"> --> <!-- test removal -->
   <div class="page-wrapper">
     <header class="werewolf-header">
-      <h1>Welcome to the Lycansthropes' Lair</h1>
+      <h1>Welcome to the Lycanthropes' Lair</h1>
       <div class="nav-buttons">
-  <button onclick="location.href='../index.html'">Home</button>
-  <button onclick="location.href='collections.html'">Collections</button>
-  <button onclick="location.href='https://yelyaht.github.io/MuseumStaff/'">Staff</button>
-</div>
+        <button onclick="location.href='../../../index.html'">Home</button>
+        <button onclick="location.href='../../collections/collections.html'">Collections</button>
+        <button onclick="location.href='../../staff/staff.html'">Staff</button>
+      </div>
     </header>
 
+    <div class="background-wrap">
+      <div class="back-button-wrap">
+        <button onclick="history.back()">← Back</button>
+    </div>
+
   <section class="banner-title">
-    <h2>Lore of Lycansthropes: The Moonborn and the Bloodhowl</h2>
+    <h2>Lore of Lycanthropes: The Moonborn and the Bloodhowl</h2>
   </section>
 
   <main class="werewolf-main">
     <div class="about-layout">
   <div class="werewolf-side-column">
-    <img src="../images/werewolf4.jpg" alt="Lycan howl" class="werewolf-img">
-    <img src="../images/werewolf.jpg" alt="Werewolf forest" class="werewolf-img">
-    <img src="../images/werewolf2.jpg" alt="lycan" class="werewolf-img">
+    <img src="../../../images/collections/werewolf/werewolf4.jpg" alt="Werewolf 4">
+    <img src="../../../images/collections/werewolf/werewolf.jpg" alt="Werewolf forest">
+    <img src="../../../images/collections/werewolf/werewolf2.jpg" alt="lycan">
   </div>
   <section class="about-box">
+      <p>Peer beyond the veil—click to view the Werewolf up close.</p>
       <h3>The First Howl</h3>
       <p>
         Long before humans walked upright and the moon had a name, the world was
@@ -123,6 +129,17 @@
     <div style="clear: both;"></div>
   </div>
   </main>
+
+  <!-- Modal -->
+    <div id="imageModal" class="modal" tabindex="-1" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-inner" role="document">
+      <button class="modal-close" tabindex="-1" aria-label="Close image (Esc)">&times;</button>
+      <img id="modalImg" alt="">
+      <p id="modalCaption" class="modal-caption" aria-hidden="true"></p>
+    </div>
+  </div>
+
+  <script src="../../../js/collections/werewolf/werewolf.js"></script>
 
   <footer class="werewolf-footer">
     <p>This is a fictitious website created purely for academic purposes.</p>
