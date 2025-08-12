@@ -1,0 +1,351 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@1,300&display=swap');
+
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background: url('../../../images/banner.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fffdd8;
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #66648b;
+  color: #fffdd8;
+  padding: 20px;
+  z-index: 1000;
+  border-bottom: 2px solid #0f52ba;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  height: 120px;
+  box-shadow: 0 2px 8px #0f52ba;
+}
+
+header h1 {
+  padding: 0;
+  margin: 0;
+  line-height: 1.05;
+  font-size: clamp(1.75rem, 4.5vw, 3rem);
+}
+
+.nav-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #56a8bd;
+  color: #FFFDD4;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #56a8bd;
+}
+
+.sub-nav-buttons {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0; /* space around buttons */
+  border-bottom: none; /* no extra line */
+  box-shadow: none; /* no shadow so it blends into body */
+}
+
+.sub-nav-buttons button {
+  padding: 8px 16px;
+  background-color: #56a8bd;
+  color: #fffdd8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.sub-nav-buttons button:hover {
+  background-color: #56a8bd;
+}
+
+.background-wrap .sub-nav-buttons {
+  margin-top: 0;       /* remove any extra gap */
+  padding-top: 15px;   /* small gap for breathing room */
+}
+
+.back-button {
+  background: rgba(102, 100, 139, 0.7); /* semi-transparent overlay */
+  padding: 10px 20px;
+  text-align: left; /* align to left – change to center if you prefer */
+}
+
+.back-button button {
+  background-color: #56a8bd;
+  color: #fffdd8;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  transition: background-color 0.3s ease;
+}
+
+.back-button-wrap button:hover {
+  background-color: #4b94a5;
+}
+
+.hero {
+  background-color: rgba(86, 168, 189, 0.85);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 1100px; /* narrower */
+  margin: 40px auto;
+  text-align: center;
+  color: #fffdd8;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #FFFDD4;
+}
+
+.hero p {
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h2 + p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hero h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #FFFDD4;
+}
+
+.artifact h2 {
+  background-color: rgba(90, 170, 220, 0.8);
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  font-family: 'Cinzel', serif;
+  margin-top: 40px;
+}
+
+.dragon-container,
+.siren-container,
+.cerberus-container {
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+  border-radius: 10px;
+  max-width: 1100px;
+  margin: 24px auto;
+  text-align: left;
+}
+
+.dragon-row,
+.siren-row,
+.cerberus-row {
+  display: grid;
+  grid-template: 260px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "title title"
+    "media content";
+  gap: 16px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(86, 168, 189, 0.85);
+  box-shadow: 0 0 12px rgba(15, 82, 186, 0.4);
+}
+
+/* Headings above each artifact */
+.dragon-row h3,
+.siren-row h3,
+.cerberus-row h3 {
+  grid-area: title;
+  margin: 0 0 12px 0;          /* space below title */
+  font-family: 'Cinzel', serif;
+  font-size: 1.4em;
+}
+
+.dragon-row h3 a,
+.siren-row h3 a,
+.cerberus-row h3 a {
+  color: #fffdd8;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 1.4em;
+}
+
+.dragon-row h3 a:hover,
+.siren-row h3 a:hover,
+.cerberus-row h3 a:hover { text-decoration: underline; }
+
+/* column/grid */
+.artifact-media { grid-area: media; }
+.artifact-media img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  display: block;
+  cursor: zoom-in;
+}
+
+.artifact-text{ grid-area: content; }
+.spec-list {
+  column-count: 2;
+  column-gap: 28px;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.spec-list p{
+  break-inside: avoid;
+  margin: 0 0 6px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #66648b;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  border-top: 2px solid #0f52ba;
+  font-size: 0.9em;
+  box-shadow: 0 -2px 8px #0f52ba;
+  width: 100%;
+}
+
+/* ===== Image Modal ===== */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,.75);
+  z-index: 9999;
+  padding: 24px;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-inner {
+  position: relative;
+  max-width: min(900px, 90vw);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modalImg {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.4);
+}
+
+.modal-caption {
+  margin-top: 10px;
+  color: #fffdd8;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Close button – no focus ring */
+.modal-close {
+  position: absolute;
+  top: -25px;
+  right: -12px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 999px;
+  font-size: 28px;
+  line-height: 40px;
+  cursor: pointer;
+  background: #00000000;
+  color: #fffdd8;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.modal, .modal * {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.modal, .modal * {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.modal-close,
+.modal-close:focus,
+.modal-close:focus-visible,
+.modal-close:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.modal:focus {
+  outline: none !important;
+}
+
+/* Prevent body scroll while modal is open */
+body.modal-open {
+  overflow:
+    hidden;
+}
