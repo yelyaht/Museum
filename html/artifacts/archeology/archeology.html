@@ -5,7 +5,8 @@
   <title>Mythical Creature Museum</title>
   <meta name="robots" content="noindex, nofollow">
   <meta name="author" content="Hayley Tymony">
-  <link rel="stylesheet" type="text/css" href="css/archeology.css">
+  <!--<link rel="stylesheet" href="../../css/global-modal.css">-->
+  <link rel="stylesheet" type="text/css" href="../../../css/artifacts/archeology.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,16 +14,17 @@
     <header>
       <h1>Archeological Artifacts</h1>
       <div class="nav-buttons">
-        <button onclick="location.href='https://yelyaht.github.io/Museum/'">Home</button>
-        <button onclick="location.href='https://yelyaht.github.io/Museum/html/collections.html'">Collections</button>
-        <button onclick="location.href='https://yelyaht.github.io/SouvenirShop/'">Souvenir Shop</button>
+        <button onclick="location.href='../../../index.html'">Home</button>
+        <button onclick="location.href='../../collections/collections.html'">Collections</button>
+        <button onclick="location.href='../../souvenir/shop.html'">Souvenir Shop</button>
       </div>
     </header>
 
     <div class="background-wrap">
       <div class="sub-nav-buttons">
-        <button onclick="location.href='https://yelyaht.github.io/MuseumArAn/'">Archeology</button>
-        <button onclick="location.href='html/anthropology.html'">Anthropology</button>
+        <button onclick="history.back()">← Back</button>
+        <button onclick="location.href='archeology.html'">Archeology</button>
+        <button onclick="location.href='../anthropology/anthropology.html'">Anthropology</button>
       </div>
 
       <main class="home-columns">
@@ -40,10 +42,10 @@
           <!-- Artifact item 1 -->
           <section class="vampire-container">
             <div class="vampire-row">
-              <h3><a href="https://yelyaht.github.io/MuseumV/">Vampire: Bloodbound Cradle Stone</a></h3>
+              <h3><a href="../../collections/vampire/vampire.html">Vampire: Bloodbound Cradle Stone</a></h3>
 
               <div class="artifact-media">
-                <img src="images/vamart.jpg" alt="Vampire Artifact">
+                <img src="../../../images/artifact/vamart.jpg" alt="Vampire artifact">
               </div>
 
               <div class="artifact-text">
@@ -83,10 +85,10 @@
           <!-- Artifact item 2 -->
           <section class="werewolf-container">
             <div class="werewolf-row">
-              <h3><a href="https://yelyaht.github.io/Museum/html/werewolf.html">Lycanthrope: Moon-Clasp Ritual Harness</a></h3>
+              <h3><a href="../../collections/werewolf/werewolf.html">Lycanthrope: Moon-Clasp Ritual Harness</a></h3>
 
               <div class="artifact-media">
-                <img src="images/werart.jpg" alt="Werewolf Artifact">
+                <img src="../../../images/artifact/werart.jpg" alt="Werewolf artifact">
               </div>
 
               <div class="artifact-text">
@@ -125,10 +127,10 @@
           <!-- Artifact item 3 -->
           <section class="elven-container">
             <div class="elven-row">
-              <h3><a href="https://yelyaht.github.io/MuseumE/">Elven: Sylvan Memory Circlet</a></h3>
+              <h3><a href="../../collections/elven/elven.html">Elven: Sylvan Memory Circlet</a></h3>
 
               <div class="artifact-media">
-                <img src="images/elfart.jpg" alt="Elven Artifact">
+                <img src="../../../images/artifact/elfart.jpg" alt="Elf artifact">
               </div>
 
               <div class="artifact-text">
@@ -171,9 +173,20 @@
             </div>
           </section>
 
-        </div> <!-- /.creature-grid -->
+        </div>
       </main>
-    </div> <!-- /.background-wrap -->
+    </div>
+
+    <!-- Modal -->
+      <div id="imageModal" class="modal" tabindex="-1" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-inner" role="document">
+        <button class="modal-close" tabindex="-1" aria-label="Close image (Esc)">&times;</button>
+        <img id="modalImg" alt="">
+        <p id="modalCaption" class="modal-caption" aria-hidden="true"></p>
+      </div>
+    </div>
+
+    <script src="../../../js/artifacts/archeology.js"></script>
 
     <footer>
       <p>This is a fictitious website created purely for academic purposes. The
@@ -181,6 +194,6 @@
         images were created by AI and curated, edited, reviewed, verified,
         validated, and augmented by a human.</p>
     </footer>
-  </div> <!-- /.page-wrapper -->
+  </div>
 </body>
 </html>
