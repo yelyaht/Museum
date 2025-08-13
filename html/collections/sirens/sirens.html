@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Hayley Tymony">
   <title>Siren's Cove</title>
-  <link rel="stylesheet" href="../css/sirens.css">
+  <!--<link rel="stylesheet" href="../../css/global-modal.css">-->
+  <link rel="stylesheet" href="../../../css/collections/siren/sirens.css">
 </head>
 <body>
-  <!-- <div class="background-wrap"> --> <!-- test removal -->
   <div class="page-wrapper">
     <header class="siren-header">
       <h1>Welcome to the Siren's Cove</h1>
       <div class="nav-buttons">
-  <button onclick="location.href='../index.html'">Home</button>
-  <button onclick="location.href='collections.html'">Collections</button>
-  <button onclick="location.href='https://yelyaht.github.io/MuseumStaff/'">Staff</button>
-</div>
+        <button onclick="location.href='../../../index.html'">Home</button>
+        <button onclick="location.href='../../collections/collections.html'">Collections</button>
+        <button onclick="location.href='../../staff/staff.html'">Staff</button>
+      </div>
     </header>
+
+    <div class="background-wrap">
+      <div class="back-button-wrap">
+        <button onclick="history.back()">← Back</button>
+    </div>
 
   <section class="banner-title">
     <h2>Lore of the Sirens: The Veilmaidens</h2>
@@ -26,10 +31,11 @@
   <main class="siren-main">
     <div class="about-layout">
   <div class="siren-side-column">
-    <img src="../images/siren2.jpg" alt="Fan Siren" class="siren-img">
-    <img src="../images/siren.jpg" alt="Ancient Siren" class="siren-img">
+    <img src="../../../images/collections/siren/siren2.jpg" alt="Siren 2">
+    <img src="../../../images/collections/siren/siren.jpg" alt="Siren">
   </div>
   <section class="about-box">
+      <p>Peer beyond the veil—click to view the Sirens up close.</p>
       <h3>Origin</h3>
       <p>
         Long before the first sailors dared chart the ocean’s edge, the world
@@ -98,6 +104,17 @@
     <div style="clear: both;"></div>
   </div>
   </main>
+
+  <!-- Modal -->
+    <div id="imageModal" class="modal" tabindex="-1" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-inner" role="document">
+      <button class="modal-close" tabindex="-1" aria-label="Close image (Esc)">&times;</button>
+      <img id="modalImg" alt="">
+      <p id="modalCaption" class="modal-caption" aria-hidden="true"></p>
+    </div>
+  </div>
+
+  <script src="../../../js/collections/siren/siren.js"></script>
 
   <footer class="siren-footer">
     <p>This is a fictitious website created purely for academic purposes.</p>
