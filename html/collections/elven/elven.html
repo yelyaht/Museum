@@ -5,21 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Hayley Tymony">
   <title>Elven Grove</title>
-  <link rel="stylesheet" href="css/elven.css">
+  <!--<link rel="stylesheet" href="../../css/global-modal.css">-->
+  <link rel="stylesheet" href="../../../css/collections/elven/elven.css">
 </head>
 <body>
-  <!-- <div class="background-wrap"> --> <!-- test removal -->
   <div class="page-wrapper">
 <header class="elven-header">
   <div class="header-container">
     <h1>Welcome to the Elven Grove</h1>
     <div class="nav-buttons">
-      <button onclick="location.href='https://yelyaht.github.io/Museum/'">Home</button>
-      <button onclick="location.href='https://yelyaht.github.io/Museum/html/collections.html'">Collections</button>
-      <button onclick="location.href='https://yelyaht.github.io/MuseumStaff/'">Staff</button>
+      <button onclick="location.href='../../../index.html'">Home</button>
+      <button onclick="location.href='../../collections/collections.html'">Collections</button>
+      <button onclick="location.href='../../staff/staff.html'">Staff</button>
     </div>
   </div>
 </header>
+
+<div class="background-wrap">
+  <div class="back-button-wrap">
+    <button onclick="history.back()">← Back</button>
+</div>
 
   <section class="banner-title">
     <h2>Lore of the Elven Genesis</h2>
@@ -28,11 +33,12 @@
   <main class="elven-main">
     <div class="about-layout">
   <div class="elven-side-column">
-    <img src="images/elfking.jpg" alt="Elf King" class="elven-img">
-    <img src="images/femaleelf.jpg" alt="Female Elf" class="elven-img">
-    <img src="images/elfy.jpg" alt="Young Elf" class="elven-img">
+    <img src="../../../images/collections/elven/elfking.jpg" alt="Elf King">
+    <img src="../../../images/collections/elven/femaleelf.jpg" alt="Female Elf">
+    <img src="../../../images/collections/elven/elfy.jpg" alt="Elf">
   </div>
   <section class="about-box">
+      <p>Peer beyond the veil—click to view the Elven up close.</p>
       <h3>The First Lightbearers</h3>
       <p>
         When the Astral Drakes sang the world into being and bound it with
@@ -89,9 +95,19 @@
         to forget their silence.
       </p>
     </section>
-    <!--<div style="clear: both;"></div>-->
   </div>
   </main>
+
+  <!-- Modal -->
+    <div id="imageModal" class="modal" tabindex="-1" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-inner" role="document">
+      <button class="modal-close" tabindex="-1" aria-label="Close image (Esc)">&times;</button>
+      <img id="modalImg" alt="">
+      <p id="modalCaption" class="modal-caption" aria-hidden="true"></p>
+    </div>
+  </div>
+
+   <script src="../../../js/collections/elven/elven.js"></script>
 
   <footer class="elven-footer">
     <p>This is a fictitious website created purely for academic purposes.</p>
