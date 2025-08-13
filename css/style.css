@@ -146,12 +146,12 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center; 
-  height: 220px;
+  height: 200px;
 }
 
 .column-box h3 {
   font-family: 'Cinzel', serif;
-  font-size: 1em;
+  font-size: 1.4em;
   margin-bottom: 10px;
   color: #fffdd8;
 }
