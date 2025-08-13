@@ -2,22 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Hayley Tymony">
   <title>Dragon's Den</title>
-  <link rel="stylesheet" href="../css/dragons.css">
+  <!--<link rel="stylesheet" href="../../css/global-modal.css">-->
+  <link rel="stylesheet" href="../../../css/collections/dragon/dragons.css">
 </head>
 <body>
-  <!-- <div class="background-wrap"> --> <!-- test removal -->
   <div class="page-wrapper">
     <header class="dragon-header">
       <h1>Welcome to the Dragon's Den</h1>
       <div class="nav-buttons">
-  <button onclick="location.href='../index.html'">Home</button>
-  <button onclick="location.href='collections.html'">Collections</button>
-  <button onclick="location.href='https://yelyaht.github.io/MuseumStaff/'">Staff</button>
-</div>
+        <button onclick="location.href='../../../index.html'">Home</button>
+        <button onclick="location.href='../../collections/collections.html'">Collections</button>
+        <button onclick="location.href='../../staff/staff.html'">Staff</button>
+      </div>
     </header>
+
+    <div class="background-wrap">
+      <div class="back-button-wrap">
+        <button onclick="history.back()">← Back</button>
+    </div>
 
   <section class="banner-title">
     <h2>The Lore of the Astral Drakes</h2>
@@ -26,11 +31,12 @@
   <main class="dragon-main">
     <div class="about-layout">
   <div class="dragon-side-column">
-    <img src="../images/blackdragon2.jpg" alt="Black Dragon" class="dragon-img">
-    <img src="../images/firedragon.jpg" alt="Fire Dragon" class="dragon-img">
-    <img src="../images/blackdragon.jpg" alt="Black Dragon" class="dragon-img">
+    <img src="../../../images/collections/dragon/blackdragon2.jpg" alt="Black Dragon 2">
+    <img src="../../../images/collections/dragon/firedragon.jpg" alt="Fire Dragon">
+    <img src="../../../images/collections/dragon/blackdragon.jpg" alt="Black Dragon">
   </div>
   <section class="about-box">
+      <p>Peer beyond the veil—click to view the Dragon up close.</p>
       <h3>Origin</h3>
       <p>
         Before time settled into a rhythm and stars had names, there were the
@@ -97,6 +103,17 @@
     <div style="clear: both;"></div>
   </div>
   </main>
+
+  <!-- Modal -->
+    <div id="imageModal" class="modal" tabindex="-1" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-inner" role="document">
+      <button class="modal-close" tabindex="-1" aria-label="Close image (Esc)">&times;</button>
+      <img id="modalImg" alt="">
+      <p id="modalCaption" class="modal-caption" aria-hidden="true"></p>
+    </div>
+  </div>
+
+  <script src="../../../js/collections/dragon/dragon.js"></script>
 
   <footer class="dragon-footer">
     <p>This is a fictitious website created purely for academic purposes.</p>
