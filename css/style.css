@@ -215,12 +215,14 @@ footer {
   width: 100%;
 }
 
-.columns .column-box:nth-child(3) p { 
+#hp-card p { 
   font-size: 0.9rem; 
 }
-.columns .column-box:nth-child(3) .feature-link { 
+
+#hp-card .feature-link { 
   font-size: 0.95rem; 
-} /* HP title link */
-.columns .column-box:nth-child(3) h3 { 
+} 
+
+#hp-card h3 { 
   font-size: 1rem; 
-}              /* "More" */
+}   
