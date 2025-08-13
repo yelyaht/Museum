@@ -5,7 +5,8 @@
   <title>Mythical Creature Museum</title>
   <meta name="robots" content="noindex, nofollow">
   <meta name="author" content="Hayley Tymony">
-  <link rel="stylesheet" type="text/css" href="../css/anthropology.css">
+  <!--<link rel="stylesheet" href="../../css/global-modal.css">-->
+  <link rel="stylesheet" href="../../../css/artifacts/anthropology/anthropology.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,17 +14,17 @@
     <header>
       <h1>Anthropological Artifacts</h1>
       <div class="nav-buttons">
-        <button onclick="location.href='https://yelyaht.github.io/Museum/'">Home</button>
-        <button onclick="location.href='https://yelyaht.github.io/Museum/html/collections.html'">Collections</button>
-        <button onclick="location.href='https://yelyaht.github.io/SouvenirShop/'">Souvenir Shop</button>
+        <button onclick="location.href='../../../index.html'">Home</button>
+        <button onclick="location.href='../../collections/collections.html'">Collections</button>
+        <button onclick="location.href='../../souvenir/shop.html'">Souvenir Shop</button>
       </div>
     </header>
 
     <div class="background-wrap">
       <div class="sub-nav-buttons">
-        <button onclick="location.href='https://yelyaht.github.io/MuseumArAn/'">Archeology</button>
-        <!-- FIXED: closed the inner single quote -->
-        <button onclick="location.href='https://yelyaht.github.io/MuseumArAn/html/anthropology.html'">Anthropology</button>
+        <button onclick="history.back()">← Back</button>
+        <button onclick="location.href='../../artifact/archeology/archeology.html'">Archeology</button>
+        <button onclick="location.href='./artifact/anthropology/anthropology.html'">Anthropology</button>
       </div>
 
       <main class="home-columns">
@@ -41,10 +42,10 @@
           <!-- Artifact item 1 -->
           <section class="dragon-container">
             <div class="dragon-row">
-              <h3><a href="https://yelyaht.github.io/Museum/html/dragons.html">Dragon: Ventral Rib Fossil – Draconis Altiventris</a></h3>
+              <h3><a href="../../collections/dragons/dragons.html">Dragon: Ventral Rib Fossil – Draconis Altiventris</a></h3>
 
               <div class="artifact-media">
-                <img src="../images/dragart.jpg" alt="Dragon Artifact">
+                <img src="../../../images/artifact/dragart.jpg" alt="Dragon artifact">
               </div>
 
               <div class="artifact-text">
@@ -82,10 +83,10 @@
           <!-- Artifact item 2 -->
           <section class="siren-container">
             <div class="siren-row">
-              <h3><a href="https://yelyaht.github.io/Museum/html/sirens.html">Siren: Laryngeal Crest of Siren Pelagis Nocturna</a></h3>
+              <h3><a href="../../collections/sirens/sirens.html">Siren: Laryngeal Crest of Siren Pelagis Nocturna</a></h3>
 
               <div class="artifact-media">
-                <img src="../images/siart.jpg" alt="Siren Artifact">
+                <img src="../../../images/artifact/siart.jpg" alt="Siren artifact">
               </div>
 
               <div class="artifact-text">
@@ -126,10 +127,10 @@
           <!-- Artifact item 3 -->
           <section class="cerberus-container">
             <div class="cerberus-row">
-              <h3><a href="https://yelyaht.github.io/MuseumC/">Cerberus: Calcified Paw Core – Cerberus Infernicus</a></h3>
+              <h3><a href="../../collections/cerberus/cerberus.html">Cerberus: Calcified Paw Core – Cerberus Infernicus</a></h3>
 
               <div class="artifact-media">
-                <img src="../images/cerbart.jpg" alt="Cerberus Artifact">
+                <img src="../../../images/artifact/cerbart.jpg" alt="Cerberus artifact">
               </div>
 
               <div class="artifact-text">
@@ -176,9 +177,28 @@
             </div>
           </section>
 
-        </div> 
+        </div>
       </main>
     </div>
+
+    <!-- Modal -->
+<div
+  id="imageModal"
+  class="modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalCaption"
+  aria-hidden="true"
+  tabindex="-1"
+>
+  <div class="modal-inner" role="document">
+    <button class="modal-close" type="button" aria-label="Close image (Esc)">&times;</button>
+    <img id="modalImg" alt="">
+    <p id="modalCaption" class="modal-caption" aria-hidden="true"></p>
+  </div>
+</div>
+
+    <script defer src="../../js/artifacts/anthropology/anthropology.js"></script>
 
     <footer>
       <p>This is a fictitious website created purely for academic purposes. The
