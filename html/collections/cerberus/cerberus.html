@@ -5,21 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Hayley Tymony">
   <title>Cerberus' Gate</title>
-  <link rel="stylesheet" href="css/cerberus.css">
+  <!--<link rel="stylesheet" href="../../css/global-modal.css">-->
+  <link rel="stylesheet" href="../../../css/collections/cerberus/cerberus.css">
 </head>
 <body>
-  <!-- <div class="background-wrap"> --> <!-- test removal -->
   <div class="page-wrapper">
 <header class="cerberus-header">
   <div class="header-container">
     <h1>Welcome to Cerberus' Gate</h1>
     <div class="nav-buttons">
-      <button onclick="location.href='https://yelyaht.github.io/Museum/'">Home</button>
-      <button onclick="location.href='https://yelyaht.github.io/Museum/html/collections.html'">Collections</button>
-      <button onclick="location.href='https://yelyaht.github.io/MuseumStaff/'">Staff</button>
+      <button onclick="location.href='../../../index.html'">Home</button>
+      <button onclick="location.href='../../collections/collections.html'">Collections</button>
+      <button onclick="location.href='../../staff/staff.html'">Staff</button>
     </div>
   </div>
 </header>
+
+  <div class="background-wrap">
+    <div class="back-button-wrap">
+      <button onclick="history.back()">← Back</button>
+  </div>
 
   <section class="banner-title">
     <h2>Lore of Cerberus: The Maw of Thresholds</h2>
@@ -28,11 +33,12 @@
   <main class="cerberus-main">
     <div class="about-layout">
   <div class="cerberus-side-column">
-    <img src="images/cerby.jpg" alt="Guarding cerberus" class="cerberus-img">
-    <img src="images/cerbwander.jpg" alt="Wandering cerberus" class="cerberus-img">
-    <img src="images/cerbs.jpg" alt="Cute cerberus" class="cerberus-img">
+    <img src="../../../images/collections/cerberus/cerby.jpg" alt="Cerberus alt">
+    <img src="../../../images/collections/cerberus/cerbwander.jpg" alt="Cerberus wandering">
+    <img src="../../../images/collections/cerberus/cerbs.jpg" alt="Cerberus">
   </div>
   <section class="about-box">
+      <p>Peer beyond the veil—click to view the Cerberus up close.</p>
       <h3>Origin Beyond Death</h3>
       <p>
         Long before mortal souls learned to fear death, and long before the
@@ -96,9 +102,20 @@
         stolen from death. For thresholds, once ignored, always demand their due.
       </p>
     </section>
-    <!--<div style="clear: both;"></div>-->
   </div>
   </main>
+</div>
+
+<!-- Modal -->
+<div id="imageModal" class="modal" tabindex="-1" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-inner" role="document">
+      <button class="modal-close" tabindex="-1" aria-label="Close image (Esc)">&times;</button>
+      <img id="modalImg" alt="">
+      <p id="modalCaption" class="modal-caption" aria-hidden="true"></p>
+    </div>
+  </div>
+
+    <script src="../../../js/collections/cerberus/cerberus.js"></script>
 
   <footer class="cerberus-footer">
     <p>This is a fictitious website created purely for academic purposes.</p>
