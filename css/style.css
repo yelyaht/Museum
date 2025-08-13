@@ -214,3 +214,13 @@ footer {
   box-shadow: 0 -2px 8px #0f52ba;
   width: 100%;
 }
+
+.columns .column-box:nth-child(3) p { 
+  font-size: 0.9rem; 
+}
+.columns .column-box:nth-child(3) .feature-link { 
+  font-size: 0.95rem; 
+} /* HP title link */
+.columns .column-box:nth-child(3) h3 { 
+  font-size: 1rem; 
+}              /* "More" */
