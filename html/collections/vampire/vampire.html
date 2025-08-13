@@ -5,21 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Hayley Tymony">
   <title>Vampires' Crypt</title>
-  <link rel="stylesheet" href="css/vampires.css">
+  <!--<link rel="stylesheet" href="../../css/global-modal.css">-->
+  <link rel="stylesheet" href="../../../css/collections/vampire/vampires.css">
 </head>
 <body>
-  <!-- <div class="background-wrap"> --> <!-- test removal -->
   <div class="page-wrapper">
 <header class="vampires-header">
   <div class="header-container">
     <h1>Welcome to the Vampires' Crypt</h1>
     <div class="nav-buttons">
-      <button onclick="location.href='https://yelyaht.github.io/Museum/'">Home</button>
-      <button onclick="location.href='https://yelyaht.github.io/Museum/html/collections.html'">Collections</button>
-      <button onclick="location.href='https://yelyaht.github.io/MuseumStaff/'">Staff</button>
+      <button onclick="location.href='../../../index.html'">Home</button>
+      <button onclick="location.href='../../collections/collections.html'">Collections</button>
+      <button onclick="location.href='../../staff/staff.html'">Staff</button>
     </div>
   </div>
 </header>
+
+<div class="background-wrap">
+  <div class="back-button-wrap">
+    <button onclick="history.back()">← Back</button>
+</div>
 
   <section class="banner-title">
     <h2>Lore of the First Vampires: The Bloodmarked</h2>
@@ -28,11 +33,12 @@
   <main class="vampires-main">
     <div class="about-layout">
   <div class="vampires-side-column">
-    <img src="images/vampire.jpg" alt="Ancient vampires" class="vampires-img">
-    <img src="images/fantasyvampire.jpg" alt="Fan vampires" class="vampires-img">
-    <img src="images/vampire2.jpg" alt="Old vampires" class="vampires-img">
+    <img src="../../../images/collections/vampire/vampire.jpg" alt="Vampire">
+    <img src="../../../images/collections/vampire/fantasyvampire.jpg" alt="Fantasy Vampire">
+    <img src="../../../images/collections/vampire/vampire2.jpg" alt="Old vampires">
   </div>
   <section class="about-box">
+      <p>Peer beyond the veil—click to view the Vampires up close.</p>
       <h3>Origin</h3>
       <p>
         The oldest vampire myths are not of the undead—but of the Unyielding, a
@@ -107,9 +113,19 @@
         claim what was stolen.
       </p>
     </section>
-    <!--<div style="clear: both;"></div>-->
   </div>
   </main>
+
+  <!-- Modal -->
+    <div id="imageModal" class="modal" tabindex="-1" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-inner" role="document">
+      <button class="modal-close" tabindex="-1" aria-label="Close image (Esc)">&times;</button>
+      <img id="modalImg" alt="">
+      <p id="modalCaption" class="modal-caption" aria-hidden="true"></p>
+    </div>
+  </div>
+
+  <script src="../../../js/collections/vampire/vampire.js"></script>
 
   <footer class="vampires-footer">
     <p>This is a fictitious website created purely for academic purposes.</p>
