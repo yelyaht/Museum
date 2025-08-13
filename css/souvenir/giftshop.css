@@ -256,6 +256,7 @@ h2 + p {
   object-fit: cover;
   display: block;
   border-radius: 8px;
+  cursor: zoom-in;
 }
 
 .card-actions {
