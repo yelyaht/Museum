@@ -58,7 +58,7 @@ header h1 {
 }
 
 button {
-  margin: 0.02; /*need to check on this*/
+  margin: 0.02rem; 
   padding: 8px 16px;
   background-color: #56a8bd;
   color: #FFFDD4;
@@ -137,24 +137,24 @@ button:hover {
 
 .column-box {
   background-color: rgba(86, 168, 189, 0.85); /* 85% opaque */
-  /* background-color: #56a8bd; */
   padding: 20px;
   border-radius: 12px;
   width: 300px;
   max-width: 90%;
-  text-align: center; /* Center text */
+  text-align: center; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Optional: vertically centers if height is set */
+  justify-content: center; 
   height: 200px;
 }
 
 .column-box h3 {
   font-family: 'Cinzel', serif;
-  font-size: 1.4em;
-  margin-bottom: 10px;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  margin-bottom: 0.35rem;
   color: #fffdd8;
+  line-height: 1.2;
 }
 
 .column-box p {
@@ -165,8 +165,10 @@ button:hover {
   margin-block: 0.25rem;
 }
 
-.column-box .promo .feature-link {
-  line-height: 1.35;
+.promo .feature-link:hover,
+.promo .feature-link:focus {
+  text-decoration: underline;
+  outline: none;
 }
 
 .home-columns {
