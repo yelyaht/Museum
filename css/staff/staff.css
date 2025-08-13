@@ -1,20 +1,121 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@1,300&display=swap');
 
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   margin: 0;
   font-family: 'Merriweather', serif;
-  background: url('../images/staff/banner.jpg') no-repeat center center fixed;
+  background: url('../../images/banner.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fffdd8;
   text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #66648b;
+  color: #fffdd8;
+  padding: 20px;
+  z-index: 1000;
+  border-bottom: 2px solid #0f52ba;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  height: 120px;
+  box-shadow: 0 2px 8px #0f52ba;
 }
 
 header h1 {
-  background-color: rgba(80, 70, 120, 0.9);
-  padding: 20px;
   margin: 0;
-  font-size: 3em;
+  line-height: 1.05;
+  font-size: clamp(1.75rem, 4.5vw, 3rem);
+}
+
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0);
+    white-space: nowrap; border: 0;
+  }
+/* attempt to get nav container below title */
+.nav-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #56a8bd;
+  color: #FFFDD4;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.65rem;
+  font-style: normal;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #56a8bd;
+}
+.back-button-wrap {
+  background: none;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.back-button-wrap button {
+  background-color: #56a8bd;
+  color: #fffdd8;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  transition: background-color 0.3s ease;
+}
+
+.back-button-wrap button:hover {
+  background-color: #4b94a5;
+}
+
+.staff h2 {
+  background-color: rgba(90, 170, 220, 0.8);
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 2em;
+  font-family: 'Cinzel', serif;
+  margin-top: 40px;
 }
 
 .staff-container {
@@ -38,26 +139,121 @@ header h1 {
 
 .about-box {
   background-color: rgba(90, 170, 220, 0.8);
-  padding: 60px 40px;
-  font-size: 2.5em;
-  font-weight: bold;
+  padding: 40px 20px;
+  font-size: 1rem;
   border-radius: 10px;
   flex: 1;
   min-width: 200px;
 }
 
+.about-box p,
+.bio-paragraph {
+  margin-top: 20px;
+  line-height: 1rem;
+  font-size: 1.6;
+}
+
 .staff-row img {
   width: 250px;
   height: auto;
-  border: 4px solid #fffdd8;
+  border: 4px solid #0f52ba;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
   flex-shrink: 0;
 }
 
+/* Footer */
 footer {
-  background-color: rgba(80, 70, 120, 0.9);
+  background-color: #66648b;
+  text-align: center;
   padding: 20px;
-  font-size: 1rem;
+  margin-top: auto;
+  border-top: 2px solid #0f52ba;
+  font-size: 0.9em;
+  box-shadow: 0 -2px 8px #0f52ba;
+  width: 100%;
+}
+
+/* ===== Image Modal ===== */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,.75);
+  z-index: 9999;
+  padding: 24px;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-inner {
+  position: relative;
+  max-width: min(900px, 90vw);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modalImg {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.4);
+}
+
+.modal-caption {
+  margin-top: 10px;
   color: #fffdd8;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Close button – no focus ring */
+.modal-close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 999px;
+  font-size: 28px;
+  line-height: 40px;
+  cursor: pointer;
+  background: #0f52ba;
+  color: #fffdd8;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.modal, .modal * {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.modal, .modal * {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.modal-close,
+.modal-close:focus,
+.modal-close:focus-visible,
+.modal-close:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.modal:focus {
+  outline: none !important;
+}
+
+/* Prevent body scroll while modal is open */
+body.modal-open {
+  overflow:
+    hidden;
 }
