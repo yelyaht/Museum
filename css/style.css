@@ -90,7 +90,7 @@ button:hover {
 }
 
 .promo .feature-link:hover,
-.promo. feature-link:focus {
+.promo .feature-link:focus {
   text-decoration: underline;   /* show it’s clickable */
   outline: none;
 }
@@ -217,10 +217,12 @@ footer {
 
 #hp-card p { 
   font-size: 0.9rem; 
+  margin: 0.25rem 0;
 }
 
 #hp-card .feature-link { 
   font-size: 0.95rem; 
+  display: inline;
   text-decoration: underline;
 } 
 
@@ -230,4 +232,5 @@ footer {
 
 #hp-card h3 { 
   font-size: 1rem; 
+  margin: 0.6rem 0 0.35rem;
 }   
