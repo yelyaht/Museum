@@ -80,12 +80,12 @@ button:hover {
 
 .sub-nav-buttons {
   display: flex;
-  justify-content: center; /* center horizontally */
+  justify-content: center; 
   align-items: center;
   gap: 10px;
-  padding: 15px 0; /* space around buttons */
-  border-bottom: none; /* no extra line */
-  box-shadow: none; /* no shadow so it blends into body */
+  padding: 15px 0; 
+  border-bottom: none;
+  box-shadow: none; 
 }
 
 .sub-nav-buttons button {
@@ -104,14 +104,14 @@ button:hover {
 }
 
 .background-wrap .sub-nav-buttons {
-  margin-top: 0;       /* remove any extra gap */
-  padding-top: 15px;   /* small gap for breathing room */
+  margin-top: 0;     
+  padding-top: 15px;  
 }
 
 .back-button {
-  background: rgba(102, 100, 139, 0.7); /* semi-transparent overlay */
+  background: rgba(102, 100, 139, 0.7); 
   padding: 10px 20px;
-  text-align: left; /* align to left – change to center if you prefer */
+  text-align: left; 
 }
 
 .back-button button {
@@ -134,7 +134,7 @@ button:hover {
   background-color: rgba(86, 168, 189, 0.85);
   padding: 40px;
   border-radius: 10px;
-  max-width: 1100px; /* narrower */
+  max-width: 1100px; 
   margin: 40px auto;
   text-align: center;
   color: #fffdd8;
@@ -172,7 +172,7 @@ h2 + p {
   padding: 20px 40px;
   border-radius: 10px;
   font-family: 'Cinzel', serif;
-  font-size: 2em;       /* was 2.5rem on artifact h2 */
+  font-size: 2em;      
   margin-bottom: 20px;
   color: #FFFDD4;
   margin-top: 40px;
@@ -211,7 +211,7 @@ h2 + p {
 .thestral-row h3,
 .hippogriff-row h3 {
   grid-area: title;
-  margin: 0 0 12px 0;          /* space below title */
+  margin: 0 0 12px 0;       
   font-family: 'Cinzel', serif;
   font-size: 1.4em;
 }
@@ -228,19 +228,6 @@ h2 + p {
 .niffler-row h3 a:hover,
 .thestral-row h3 a:hover,
 .hippogriff-row h3 a:hover { text-decoration: underline; }
-
-/*
-.artifact-title {
-  grid-area: title;
-  margin: 0 0 4px 0;
-  font-family: 'Cinzel', serif;
-  font-size: 1em;
-}
-
-.artifact-title a {
-  color: #fffdd8
-  text-decoration: none;
-}*/
 
 /* column/grid */
 .gallery-media { grid-area: media; }
@@ -333,7 +320,7 @@ footer {
   font-size: 28px;
   line-height: 40px;
   cursor: pointer;
-  background: #0f52ba;
+  background: transparent;
   color: #fffdd8;
   box-shadow: none !important;
   outline: none !important;
