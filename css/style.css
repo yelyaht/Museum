@@ -221,7 +221,12 @@ footer {
 
 #hp-card .feature-link { 
   font-size: 0.95rem; 
+  text-decoration: underline;
 } 
+
+#hp-card > .promo .feature-link {
+  text-decoration: underline;
+}
 
 #hp-card h3 { 
   font-size: 1rem; 
