@@ -193,18 +193,20 @@ h2 + p {
 .vampire-row,
 .werewolf-row,
 .elven-row {
-  display: grid;
-  grid-template: 260px 1fr;
-  grid-template-rows: auto 1fr;
+  display: grid !important;
+  grid-template-columns: 280px 1fr !important;
+  grid-template-rows: auto 1fr !important;
   grid-template-areas:
     "title title"
-    "media content";
-  gap: 16px;
+    "media content" !important;
+  gap: 16px !important;
   padding: 20px;
   border-radius: 12px;
   background-color: rgba(86, 168, 189, 0.85);
   box-shadow: 0 0 12px rgba(15, 82, 186, 0.4);
+  align-items: start !important;
 }
+
 
 /* Headings above each artifact */
 .vampire-row h3,
@@ -229,6 +231,10 @@ h2 + p {
 .werewolf-row h3 a:hover,
 .elven-row h3 a:hover { text-decoration: underline; }
 
+.vampire-row h3 p, .werewolf-row h3 p, .elven-row h3 p {
+  color: #fffdd8; text-decoration: none; font-family: 'Cinzel', serif; font-size: .65em;
+}
+
 /*
 .artifact-title {
   grid-area: title;
@@ -243,30 +249,30 @@ h2 + p {
 }*/
 
 /* column/grid */
-.artifact-media { grid-area: media; }
+.artifact-media { grid-area: media !important; }
 .artifact-media img {
-  width: 100%;
-  max-width: 260px;
-  height: auto;
+  width: 100% !important;
+  max-width: 260px !important;
+  height: auto !important;
   border: none;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
-  display: block;
+  display: block !important;
   cursor: zoom-in;
 }
 
-.artifact-text{ grid-area: content; }
+.artifact-text{ grid-area: content !important; }
 .spec-list {
-  column-count: 2;
+  column-count: 2 !important;
   column-gap: 28px;
   margin: 0;
-  font-size: 0.85rem;
-  line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .spec-list p{
   break-inside: avoid;
-  margin: 0 0 6px 0;
+  margin: 0 0 8px 0;
 }
 
 /* Footer */
@@ -280,8 +286,104 @@ footer {
   box-shadow: 0 -2px 8px #0f52ba;
   width: 100%;
 }
+/* ========== Text Modal (HTML pop-up) ========== */
+.tmodal {
+  position: fixed; inset: 0; display: none;
+  align-items: center; justify-content: center;
+  background: rgba(0,0,0,.6);
+  z-index: 10000;
+}
+.tmodal.open { display: flex !important; }
 
-/* ===== Image Modal ===== */
+.tmodal-content {
+  max-width: 1000px !important;
+  width: 92vw;
+  max-height: 70vh;
+  overflow: auto;
+  margin: 0 auto;
+  background-color: #66648b;
+  color: #fffdd8;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #0f52ba;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Close button */
+.tmodal-close {
+  float: right; font-size: 1.5rem;
+  background: transparent; border: none; cursor: pointer; color: #fffdd8;
+  }
+
+/* Modal body scroll */
+#tmodal-body {
+  padding: 18px 20px 22px;
+  max-height: calc(90vh - 20px);
+  overflow: auto;
+  color: #fffdd8;
+}
+
+/* Optional: inherited headings/text inside modal */
+#tmodal-body h2, #tmodal-body h3, #tmodal-body h4 {
+  font-family: 'Cinzel', serif;
+  color: #fffdd8;
+}
+#tmodal-body p { line-height: 1.55; }
+
+/* Prevent background scroll when modal is open */
+body.tmodal-open { overflow: hidden; }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .tmodal, .tmodal * { animation: none !important; transition: none !important; }
+}
+
+/* ========== Hidden Histories (sources for modal) ========== */
+#histories { max-width: 1100px; margin: 28px auto; padding: 0 20px; }
+
+/* Blue panel (card) */
+.history-top {
+  background: rgba(86, 168, 189, 0.85);
+  border: 1px solid #0f52ba;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(15, 82, 186, .25);
+  padding: 14px 16px;
+  display: grid; gap: 12px; grid-template-columns: 1fr;
+}
+@media (min-width: 768px) { .history-top { grid-template-columns: 1fr; } }
+
+.history-media {
+  background: rgba(0, 0, 0, .15);
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: 10px; overflow: hidden;
+}
+.history-media img { width: 100%; height: auto; display: block; object-fit: cover; }
+
+.artifact-facts {
+  background: rgba(0, 0, 0, .12);
+  border: 1px solid rgba(255, 253, 216, .18);
+  border-radius: 10px; padding: 12px 14px; color: #fffdd8;
+  text-align: center;
+}
+.artifact-facts h4, .history-body h3 {
+  font-family: 'Cinzel', serif; font-size: 1.05rem; color: #fffdd8;
+  margin: 4px 0 8px;
+}
+.artifact-facts p { margin: 6px 0 10px; color: #fffdd8; line-height: 1.55; }
+
+.history-body {
+  margin-top: 14px;
+  background: rgba(86, 168, 189, 0.85);
+  border: 1px solid #0f52ba;
+  box-shadow: 0 8px 24px rgba(15, 82, 186, .25);
+  border-radius: 10px; padding: 16px 20px;
+}
+.history-body p { margin: 8px 0; color: #fffdd8; line-height: 1.5; }
+
+/* ===== Image Modal =====
 .modal {
   position: fixed;
   inset: 0;
@@ -321,7 +423,7 @@ footer {
   text-align: center;
 }
 
-/* Close button – no focus ring */
+/* Close button – no focus ring
 .modal-close {
   position: absolute;
   top: -25px;
@@ -360,8 +462,8 @@ footer {
   outline: none !important;
 }
 
-/* Prevent body scroll while modal is open */
+/* Prevent body scroll while modal is open
 body.modal-open {
   overflow:
     hidden;
-}
+} */
