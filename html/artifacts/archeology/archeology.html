@@ -26,6 +26,7 @@
         <button onclick="history.back()">← Back</button>
         <button onclick="location.href='archeology.html'">Archeology</button>
         <button onclick="location.href='../anthropology/anthropology.html'">Anthropology</button>
+        <button onclick="location.href='../../history/history.html'">Histories</button>
       </div>
 
       <main class="home-columns">
@@ -43,10 +44,13 @@
           <!-- Artifact item 1 -->
           <section class="vampire-container">
             <div class="vampire-row">
-              <h3><a href="../../collections/vampire/vampire.html">Vampire: Bloodbound Cradle Stone</a></h3>
+              <h3><a href="../../collections/vampire/vampire.html">Vampire: Bloodbound Cradle Stone</a>
+              <p>Tip: Click the image to learn a brief history of the artifact.</p></h3>
 
               <div class="artifact-media">
-                <img src="../../../images/artifact/vamart.jpg" alt="Vampire artifact">
+                <img src="../../../images/artifact/vamart.jpg"
+                     alt="Vampire artifact"
+                     data-tmodal-target="#tmodal-text-vamp_art">
               </div>
 
               <div class="artifact-text">
@@ -86,10 +90,13 @@
           <!-- Artifact item 2 -->
           <section class="werewolf-container">
             <div class="werewolf-row">
-              <h3><a href="../../collections/werewolf/werewolf.html">Lycanthrope: Moon-Clasp Ritual Harness</a></h3>
+              <h3><a href="../../collections/werewolf/werewolf.html">Lycanthrope: Moon-Clasp Ritual Harness</a>
+              <p>Tip: Click the image to learn a brief history of the artifact.</p></h3>
 
               <div class="artifact-media">
-                <img src="../../../images/artifact/werart.jpg" alt="Werewolf artifact">
+                <img src="../../../images/artifact/werart.jpg"
+                alt="Werewolf artifact"
+                data-tmodal-target="#tmodal-text-were_art">
               </div>
 
               <div class="artifact-text">
@@ -128,10 +135,13 @@
           <!-- Artifact item 3 -->
           <section class="elven-container">
             <div class="elven-row">
-              <h3><a href="../../collections/elven/elven.html">Elven: Sylvan Memory Circlet</a></h3>
+              <h3><a href="../../collections/elven/elven.html">Elven: Sylvan Memory Circlet</a>
+              <p>Tip: Click the image to learn a brief history of the artifact.</p></h3>
 
               <div class="artifact-media">
-                <img src="../../../images/artifact/elfart.jpg" alt="Elf artifact">
+                <img src="../../../images/artifact/elfart.jpg"
+                alt="Elf artifact"
+                data-tmodal-target="#tmodal-text-elf_circ">
               </div>
 
               <div class="artifact-text">
@@ -178,16 +188,110 @@
       </main>
     </div>
 
-    <!-- Modal -->
+
+    <!-- ===== Hidden History Content (modal sources) ===== -->
+    <section id="histories" class="hidden">
+      <!-- Vampire -->
+      <div class="tmodal-item" id="tmodal-text-vamp_art" hidden>
+        <h2 id="tmodal-title">Bloodbound Cradle Stone</h2>
+
+        <div class="history-top" style="margin-top:10px;">
+          <div class="artifact-facts">
+            <h4>Artifact Facts</h4>
+            <p>~5,200 Years | Thracian Plains, Bulgaria | Basalt with Hematite Veining</p>
+
+            <h3>Interpretation</h3>
+            <p>The Bloodbound Cradle Stone is an oval basin carved from basalt, measuring roughly
+              45 cm in diameter, its interior polished to a reflective smoothness. Threaded with
+              veins of hematite, the stone bears natural crimson streaks that heighten both its
+              aesthetic power and symbolic resonance. Along the rim, faintly engraved motifs—geometric
+              or perhaps vegetal—add a layer of deliberate craftsmanship, suggesting intentionality
+              beyond the purely functional. Mineral residue analysis has revealed traces consistent
+              with hemoglobin, though the source remains inconclusive.</p>
+            <p>Within Thracian myth cycles, blood was more than substance; it was a medium of continuity,
+              binding ancestors to descendants and community to earth. The cradle-like form reinforces
+              this dual role: a vessel of life, birth, and generational renewal, yet also a receptacle
+              for offerings that acknowledged mortality. Existing at the threshold between creation and
+              destruction, the stone embodies the paradox of vitality through sacrifice. Whether used in
+              natal blessings, blood-offering ceremonies, or ancestral rites, it stands as a rare fusion
+              of material artistry, mythic symbolism, and enduring cultural mystery.</p>
+          </div>
+        </div>
+
+        <p class="courtesy"><em>On display courtesy of the Mythical Creature Museum Anthropology Collection.</em></p>
+      </div>
+
+      <!-- Werewolf -->
+      <div class="tmodal-item" id="tmodal-text-were_art" hidden>
+        <h2 id="tmodal-title">Moon-Clasp Ritual Harness</h2>
+
+        <div class="history-top" style="margin-top:10px;">
+          <div class="artifact-facts">
+            <h4>Artifact Facts</h4>
+            <p>~1,500 years | Carpathian Basin | Silver &amp; Bone</p>
+
+            <h3>Interpretation</h3>
+            <p>Encased in silver filigree, this reliquary holds a calcified claw fragment
+              long linked to lycanthropic lore. Found in a forest burial mound with wolf
+              bones, charcoal, and iron nails, the object suggests ritual practices meant
+              to ward off or bind shapeshifters. The soot traces imply it may have been
+              passed through flame, invoking fire’s purifying force.</p>
+            <p>Silver’s symbolic role in resisting transformation is well-documented in
+              folklore, while the claw fragment embodies the dangerous threshold between
+              man and beast. Worn smooth at the chain loop, it was likely carried as a
+              protective amulet. Comparable charms across the Balkans used wolf teeth,
+              yet this reliquary’s crafted casing indicates elevated ritual status.</p>
+          </div>
+        </div>
+
+        <p class="courtesy"><em>On display courtesy of the Mythical Creature Museum Anthropology Collection.</em></p>
+      </div>
+
+      <!-- Elven -->
+      <div class="tmodal-item" id="tmodal-text-elf_circ" hidden>
+        <h2 id="tmodal-title">Sylvan Memory Circlet</h2>
+
+        <div class="history-top" style="margin-top:10px;">
+          <div class="artifact-facts">
+            <h4>Artifact Facts</h4>
+            <p>~2,400 years | Black Forest Shrine | Silver Moonstone</p>
+
+            <h3>Interpretation</h3>
+            <p>Discovered within a hollow-tree shrine, this circlet reflects the blending
+              of nature and ritual among woodland societies. Crafted from silver and inlaid
+              with moonstone, it resonates with lunar cycles, purity, and foresight. Its
+              lightweight construction and signs of repeated wear suggest ceremonial use,
+              likely in initiation rites or seasonal observances.</p>
+            <p>The circlet was recovered alongside oak offerings and votive arrowheads,
+              emphasizing its role within sacred woodland ritual. While its form recalls
+              Celtic druidic diadems, its design is distinct—lighter, more refined, aligning
+              with mythic associations of elves as liminal beings tied to moonlight and thresholds.</p>
+          </div>
+        </div>
+
+        <p class="courtesy"><em>On display courtesy of the Mythical Creature Museum Anthropology Collection.</em></p>
+      </div>
+    </section>
+    <!-- ===== End hidden content ===== -->
+
+        <!-- ===== TEXT-MODAL SHELL (one only) ===== -->
+        <div class="tmodal" id="tmodal" role="dialog" aria-modal="true" aria-labelledby="tmodal-title">
+          <div class="tmodal-content" role="document">
+            <button class="tmodal-close" type="button" aria-label="Close">×</button>
+            <div id="tmodal-body"></div>
+          </div>
+        </div>
+
+    <!-- Modal
       <div id="imageModal" class="modal" tabindex="-1" aria-hidden="true" role="dialog" aria-modal="true">
       <div class="modal-inner" role="document">
         <button class="modal-close" tabindex="-1" aria-label="Close image (Esc)">&times;</button>
         <img id="modalImg" alt="">
         <p id="modalCaption" class="modal-caption" aria-hidden="true"></p>
       </div>
-    </div>
+    </div>-->
 
-    <script src="../../../js/artifacts/archeology.js"></script>
+    <script defer src="../../../js/artifacts/archeology.js"></script>
 
     <footer>
       <p>This is a fictitious website created purely for academic purposes. The
