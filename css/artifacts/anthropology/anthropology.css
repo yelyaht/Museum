@@ -126,12 +126,13 @@ button:hover, .sub-nav-buttons button:hover { background-color: #56a8bd; }
 
 /* Blue panel (card) */
 .history-top {
-  background: rgba(86, 168, 189, 0.85);
-  border: 1px solid #0f52ba;
+  background: rgba(86, 168, 189, 0.85) !important;
+  border: 1px solid #0f52ba !important;
   border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(15, 82, 186, .25);
-  padding: 14px 16px;
+  box-shadow: 0 8px 24px rgba(15, 82, 186, .25) !important;
+  padding: 16px !important;
   display: grid; gap: 12px; grid-template-columns: 1fr;
+  text-align: center;
 }
 @media (min-width: 768px) { .history-top { grid-template-columns: 1fr; } }
 
@@ -155,11 +156,11 @@ button:hover, .sub-nav-buttons button:hover { background-color: #56a8bd; }
 .artifact-facts p { margin: 6px 0 10px; color: #fffdd8; line-height: 1.55; }
 
 .history-body {
-  margin-top: 14px;
-  background: rgba(86, 168, 189, 0.85);
-  border: 1px solid #0f52ba;
-  box-shadow: 0 8px 24px rgba(15, 82, 186, .25);
-  border-radius: 10px; padding: 16px 20px;
+  margin: 14px auto 0;
+  max-width: 700px;
+  border: none !important;
+  box-shadow: none !important; background: transparent !important;
+  border-radius: 10px; padding: 0;
 }
 .history-body p { margin: 8px 0; color: #fffdd8; line-height: 1.5; }
 
@@ -171,34 +172,6 @@ footer {
   font-size: 0.9em; box-shadow: 0 -2px 8px #0f52ba;
   width: 100%;
 }
-
-/* ========== Image Modal (unchanged) ========== */
-.modal {
-  position: fixed; inset: 0; display: none;
-  align-items: center; justify-content: center;
-  background: rgba(0,0,0,.75); z-index: 9999; padding: 24px;
-}
-.modal.open { display: flex; }
-.modal-inner {
-  position: relative;
-  max-width: min(900px, 90vw); max-height: 90vh;
-  display: flex; flex-direction: column; align-items: center;
-}
-#modalImg {
-  max-width: 100%; max-height: 80vh;
-  border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,.4);
-}
-.modal-caption { margin-top: 10px; color: #fffdd8; font-style: italic; text-align: center; }
-.modal-close {
-  position: absolute; top: -25px; right: -12px;
-  width: 40px; height: 40px; border: none; border-radius: 999px;
-  font-size: 28px; line-height: 40px; cursor: pointer;
-  background: transparent; color: #fffdd8;
-  box-shadow: none !important; outline: none !important;
-}
-
-/* Prevent body scroll while any modal is open */
-body.modal-open { overflow: hidden; }
 
 /* ========== Text Modal (HTML pop-up) ========== */
 .tmodal {
@@ -252,16 +225,20 @@ body.modal-open { overflow: hidden; }
 
 /* Facts card inside modal */
 .tmodal-content .artifact-facts {
-  margin: 14px 0 auto; max-width: 700px;
-  background: rgba(86, 168, 189, 0.85);
-  border: 1px solid rgba(255, 253, 216, .18);
-  border-radius: 10px; padding: 12px 16px;
-  color: #fffdd8;
+  margin: 14px auto; max-width: 700px;
+  background: transparent !important;
+  border: none !important; box-shadow: none !important;
+  border-radius: 10px; padding: 0;
+  color: #fffdd8; text-align: center;
 }
 
 /* Interpretation block inside modal */
 .tmodal-content .history-body {
   margin: 14px auto 0; max-width: 700px;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0;
 }
 
 /* Courtesy line */
@@ -273,3 +250,31 @@ p.courtesy {
 
 /* Utility */
 .hidden { display: none !important; }
+
+/* ========== Image Modal (unchanged) ========== */
+.modal {
+  position: fixed; inset: 0; display: none;
+  align-items: center; justify-content: center;
+  background: rgba(0,0,0,.75); z-index: 9999; padding: 24px;
+}
+.modal.open { display: flex; }
+.modal-inner {
+  position: relative;
+  max-width: min(900px, 90vw); max-height: 90vh;
+  display: flex; flex-direction: column; align-items: center;
+}
+#modalImg {
+  max-width: 100%; max-height: 80vh;
+  border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,.4);
+}
+.modal-caption { margin-top: 10px; color: #fffdd8; font-style: italic; text-align: center; }
+.modal-close {
+  position: absolute; top: -25px; right: -12px;
+  width: 40px; height: 40px; border: none; border-radius: 999px;
+  font-size: 28px; line-height: 40px; cursor: pointer;
+  background: transparent; color: #fffdd8;
+  box-shadow: none !important; outline: none !important;
+}
+
+/* Prevent body scroll while any modal is open */
+body.modal-open { overflow: hidden; }
