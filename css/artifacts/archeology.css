@@ -306,10 +306,11 @@ footer {
   padding: 20px;
   border-radius: 12px;
   border: 1px solid #0f52ba;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  box-shadow: transparent !important;
   text-align: center;
   display: flex;
   flex-direction: column;
+
 }
 
 /* Close button */
@@ -347,8 +348,8 @@ body.tmodal-open { overflow: hidden; }
 /* Blue panel (card) */
 .history-top {
   background: rgba(86, 168, 189, 0.85);
-  border: 1px solid #0f52ba;
-  border-radius: 10px;
+  border: 1px solid #0f52ba; max-width: 700px;
+  border-radius: 10px; margin: 0 auto;
   box-shadow: 0 8px 24px rgba(15, 82, 186, .25);
   padding: 14px 16px;
   display: grid; gap: 12px; grid-template-columns: 1fr;
@@ -363,7 +364,7 @@ body.tmodal-open { overflow: hidden; }
 .history-media img { width: 100%; height: auto; display: block; object-fit: cover; }
 
 .artifact-facts {
-  background: rgba(0, 0, 0, .12);
+  background: transparent !important; 
   border: 1px solid rgba(255, 253, 216, .18);
   border-radius: 10px; padding: 12px 14px; color: #fffdd8;
   text-align: center;
@@ -375,11 +376,11 @@ body.tmodal-open { overflow: hidden; }
 .artifact-facts p { margin: 6px 0 10px; color: #fffdd8; line-height: 1.55; }
 
 .history-body {
-  margin-top: 14px;
-  background: rgba(86, 168, 189, 0.85);
-  border: 1px solid #0f52ba;
-  box-shadow: 0 8px 24px rgba(15, 82, 186, .25);
-  border-radius: 10px; padding: 16px 20px;
+  margin-top: 14px auto 0; max-width: 700px;
+  background: transparent !important;
+  border: transparent !important;
+  box-shadow: transparent !important;
+  border-radius: 10px; padding: 0;
 }
 .history-body p { margin: 8px 0; color: #fffdd8; line-height: 1.5; }
 
